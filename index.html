@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minor Project | Teachnook</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      * {
+        padding: 0;
+        font-family: cursive;
+        margin: 0;
+      }
+      .title {
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+      .header {
+        padding: 30px;
+      }
+      .body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        padding: 50px;
+      }
+      .footer {
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .primary {
+        color: aqua;
+      }
+      img {
+        padding: 20px;
+        font-size: 40px;
+      }
+      h3 {
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background: black; color: white">
+    <section class="header">
+      <h1 class="title">Historical Places in India</h1>
+    </section>
+    <section class="body">
+      <div class="container" id="e"></div>
+    </section>
+    <section class="footer">
+      <h1 class="title">
+        Designed and Developed by
+        <a href="https://thevector.xyz">Som</a> @Teachnook
+      </h1>
+      <h1 class="primary">Time taken - [15mins]</h1>
+    </section>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      const historical_places = {
+        "Taj Mahal":
+          "https://assets-news.housing.com/news/wp-content/uploads/2022/07/20204648/10-famous-historical-places-in-India-04.jpg",
+        "Qutub Minar":
+          "https://assets-news.housing.com/news/wp-content/uploads/2022/07/20204731/10-famous-historical-places-in-India-05.jpg",
+        "Amer Fort":
+          "https://assets-news.housing.com/news/wp-content/uploads/2022/07/20204813/10-famous-historical-places-in-India-06.jpg",
+        "Ajanta and Ellora Caves":
+          "https://assets-news.housing.com/news/wp-content/uploads/2022/07/20204931/10-famous-historical-places-in-India-08.jpg",
+        "Konark Temple":
+          "https://assets-news.housing.com/news/wp-content/uploads/2022/07/20205049/10-famous-historical-places-in-India-10.jpg",
+        "Sanchi Stupa":
+          "https://assets-news.housing.com/news/wp-content/uploads/2022/07/20205240/10-famous-historical-places-in-India-12.jpg",
+        "Gateway of India":
+          "https://assets-news.housing.com/news/wp-content/uploads/2022/07/20205359/10-famous-historical-places-in-India-14.jpg",
+        "Monuments in Hampi":
+          "https://assets-news.housing.com/news/wp-content/uploads/2022/07/20205526/10-famous-historical-places-in-India-16.jpg",
+      };
+      const e = document.getElementById("e");
+      Object.entries(historical_places).map(([a, s]) => {
+        var img = document.createElement("img");
+        var des = document.createElement("h3");
+        des.innerText = a;
+        img.src = `${s}`;
+        e.appendChild(img);
+        e.appendChild(des);
+      });
+    </script>
+  </body>
+</html>

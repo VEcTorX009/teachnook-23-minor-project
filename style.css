@@ -1,0 +1,41 @@
+
+*{
+    padding: 0;
+    font-family: cursive;
+    margin: 0;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    padding: 30px;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 50px;
+}
+.footer{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.primary{
+    color: aqua;
+}
+img{
+    padding: 20px;
+    font-size: 40px;
+}
+h3{
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
